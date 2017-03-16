@@ -1,0 +1,27 @@
+{
+  "name": "rsuite-icon-font",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsuite/rsuite-icon-font.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsuite/rsuite-icon-font/issues"
+  },
+  "homepage": "https://github.com/rsuite/rsuite-icon-font#readme",
+  "devDependencies": {
+    "async": "^2.1.5",
+    "gulp": "^3.9.1",
+    "gulp-consolidate": "^0.2.0",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-rename": "^1.2.2",
+    "lodash": "^4.17.4"
+  }
+}
