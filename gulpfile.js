@@ -13,6 +13,8 @@ gulp.task('default', function () {
             prependUnicode: true, // recommended option
             formats: ['ttf', 'eot', 'woff', 'svg'],
             timestamp, // recommended to get consistent builds when watching files
+            fontHeight: 1001,
+            normalize: true
         }))
         .on('glyphs', function (glyphs) {
             const options = {
@@ -24,12 +26,18 @@ gulp.task('default', function () {
 
             gulp.src('src/css.tpl')
                 .pipe(consolidate('lodash', options))
-                .pipe(rename({ basename: fontName, extname: ".css" }))
+                .pipe(rename({
+                    basename: fontName,
+                    extname: ".css"
+                }))
                 .pipe(gulp.dest('dist/'));
 
             gulp.src(`src/html.tpl`)
                 .pipe(consolidate('lodash', options))
-                .pipe(rename({ basename: 'index', extname: ".html" }))
+                .pipe(rename({
+                    basename: 'index',
+                    extname: ".html"
+                }))
                 .pipe(gulp.dest('dist/'));
         })
         .pipe(gulp.dest('dist/fonts/'));
@@ -40,5 +48,8 @@ gulp.task('default', function () {
  * This is needed for mapping glyphs and codepoints.
  */
 function mapGlyphs(glyph) {
-    return { name: glyph.name, codepoint: glyph.unicode[0].charCodeAt(0) }
+    return {
+        name: glyph.name,
+        codepoint: glyph.unicode[0].charCodeAt(0)
+    }
 }
