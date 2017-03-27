@@ -21,10 +21,12 @@ gulp.task('default', function () {
                 className,
                 fontName,
                 fontPath: 'fonts/', // set path to font (from your CSS file if relative)
-                glyphs: glyphs.map(mapGlyphs)
+                glyphs: glyphs.sort((a, b) => {
+                    return a.name.localeCompare(b.name);
+                }).map(mapGlyphs)
             };
 
-            gulp.src('src/css.tpl')
+            gulp.src('src/tpl/css.tpl')
                 .pipe(consolidate('lodash', options))
                 .pipe(rename({
                     basename: fontName,
@@ -32,7 +34,23 @@ gulp.task('default', function () {
                 }))
                 .pipe(gulp.dest('dist/'));
 
-            gulp.src(`src/html.tpl`)
+            gulp.src('src/tpl/less.tpl')
+                .pipe(consolidate('lodash', options))
+                .pipe(rename({
+                    basename: fontName,
+                    extname: ".less"
+                }))
+                .pipe(gulp.dest('dist/'));
+
+            gulp.src('src/tpl/variables.tpl')
+                .pipe(consolidate('lodash', options))
+                .pipe(rename({
+                    basename: 'variables',
+                    extname: ".less"
+                }))
+                .pipe(gulp.dest('dist/'));
+
+            gulp.src(`src/tpl/html.tpl`)
                 .pipe(consolidate('lodash', options))
                 .pipe(rename({
                     basename: 'index',
