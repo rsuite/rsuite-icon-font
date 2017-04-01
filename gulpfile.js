@@ -3,7 +3,7 @@ const gulp = require('gulp');
 const iconfont = require('gulp-iconfont');
 const consolidate = require('gulp-consolidate');
 const { fontName, className, svgSrc } = JSON.parse(fs.readFileSync(__dirname + '/package.json', 'utf8')).CONFIG;
-const timestamp = Math.round(Date.now() / 1000);
+const timestamp = 1491024054167;
 const rename = require('gulp-rename');
 
 gulp.task('default', function () {
