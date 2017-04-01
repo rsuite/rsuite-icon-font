@@ -16,12 +16,12 @@
 </head>
 <body>
 <h1><%= fontName %></h1>
-<ul class="glyph"><% _.each(glyphs, function(glyph) { %>
+<ul class="glyph"><% _.each(glyphs, function(glyph) { %><%_.each(glyph.name.split(','),function(name){%>
     <li>
-        <i class="<%= className %> <%= className %>-<%= glyph.name %> <%= className %>-4x"><span><%= String.fromCodePoint(glyph.codepoint) %></span></i>
-        <span class="glyph-name"><%= glyph.name %></span>
+        <i class="<%= className %> <%= className %>-<%= name %> <%= className %>-4x"><span><%= String.fromCodePoint(glyph.codepoint) %></span></i>
+        <span class="glyph-name"><%= name %></span>
         <span class="glyph-codepoint"><%= glyph.codepoint.toString(16).toUpperCase() %></span>
-    </li><%}); %>
+    </li><%}); %><%});%>
 </ul>
 </body>
 </html>

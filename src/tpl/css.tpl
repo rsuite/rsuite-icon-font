@@ -38,5 +38,5 @@
     text-align: center;
 }
 
-<% _.each(glyphs, function(glyph) {%>.<%= className %>-<%= glyph.name %>:before { content: "\<%= glyph.codepoint.toString(16).toUpperCase() %>" }
-<%}); %>
+<% _.each(glyphs, function(glyph) {%><%_.each(glyph.name.split(','),function(name){%>.<%= className %>-<%= name %>:before { content: "\<%= glyph.codepoint.toString(16).toLowerCase() %>" }
+<%}); %><%}); %>

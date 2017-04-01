@@ -1,13 +1,13 @@
+const fs = require('fs');
 const gulp = require('gulp');
 const iconfont = require('gulp-iconfont');
-const consolidate = require('gulp-consolidate')
+const consolidate = require('gulp-consolidate');
+const { fontName, className, svgSrc } = JSON.parse(fs.readFileSync(__dirname + '/package.json', 'utf8')).CONFIG;
 const timestamp = Math.round(Date.now() / 1000);
-const fontName = 'RSuiteIconFont';
-const className = 'icon';
-const rename = require('gulp-rename')
+const rename = require('gulp-rename');
 
 gulp.task('default', function () {
-    gulp.src(['src/**/*.svg'])
+    gulp.src(svgSrc)
         .pipe(iconfont({
             fontName, // required
             prependUnicode: true, // recommended option
@@ -37,7 +37,7 @@ gulp.task('default', function () {
             gulp.src('src/tpl/less.tpl')
                 .pipe(consolidate('lodash', options))
                 .pipe(rename({
-                    basename: fontName,
+                    basename: 'iconfont',
                     extname: ".less"
                 }))
                 .pipe(gulp.dest('dist/'));
@@ -45,7 +45,7 @@ gulp.task('default', function () {
             gulp.src('src/tpl/variables.tpl')
                 .pipe(consolidate('lodash', options))
                 .pipe(rename({
-                    basename: 'variables',
+                    basename: 'iconfont-variables',
                     extname: ".less"
                 }))
                 .pipe(gulp.dest('dist/'));
@@ -55,6 +55,14 @@ gulp.task('default', function () {
                 .pipe(rename({
                     basename: 'index',
                     extname: ".html"
+                }))
+                .pipe(gulp.dest('dist/'));
+
+            gulp.src(`src/tpl/json.tpl`)
+                .pipe(consolidate('lodash', options))
+                .pipe(rename({
+                    basename: 'icons',
+                    extname: ".json"
                 }))
                 .pipe(gulp.dest('dist/'));
         })

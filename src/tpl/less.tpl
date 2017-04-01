@@ -9,24 +9,26 @@
     font-style: normal;
 }
 
-.<%= className %>:before {
+.<%= className %> {
     //* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "<%= fontName %>" !important;
+    font-family: 'RSuiteIconFont' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
+    display: inline-block;
     text-transform: none;
-    line-height: 1;
 
     //* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-<% _.each(glyphs, function(glyph) {%>.<%= className %>-<%= glyph.name %>{
+<% _.each(glyphs, function(glyph) {%><%_.each(glyph.name.split(','),function(name){%>.<%= className %>-<%= name %>{
     &:before {
-        content: @icon-<%= glyph.name %>;
+        content: @icon-<%= name %>;
     }
 }
+
+<%});%>
 <%}); %>
