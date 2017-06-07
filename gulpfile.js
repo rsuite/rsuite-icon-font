@@ -2,7 +2,7 @@ const fs = require('fs');
 const gulp = require('gulp');
 const iconfont = require('gulp-iconfont');
 const consolidate = require('gulp-consolidate');
-const { fontName, className, svgSrc } = JSON.parse(fs.readFileSync(__dirname + '/package.json', 'utf8')).CONFIG;
+const {fontName, className, svgSrc} = JSON.parse(fs.readFileSync(__dirname + '/package.json', 'utf8')).CONFIG;
 const timestamp = Math.round(Date.now() / 1000);
 const rename = require('gulp-rename');
 
@@ -14,6 +14,7 @@ gulp.task('default', function () {
             formats: ['ttf', 'eot', 'woff', 'svg'],
             timestamp, // recommended to get consistent builds when watching files
             fontHeight: 1001,
+            descent: 180,//The font descent. It is usefull to fix the font baseline yourself.
             normalize: true
         }))
         .on('glyphs', function (glyphs) {
