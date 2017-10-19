@@ -861,6 +861,8 @@
 .icon-volume-down:before { content: "\f027" }
 .icon-volume-off:before { content: "\f026" }
 .icon-volume-up:before { content: "\f028" }
+.icon-weapp:before { content: "\ea01" }
+.icon-web:before { content: "\ea02" }
 .icon-wechat:before { content: "\f1d7" }
 .icon-weixin:before { content: "\f1d7" }
 .icon-weibo:before { content: "\f18a" }
