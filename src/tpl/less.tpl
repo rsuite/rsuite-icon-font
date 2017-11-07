@@ -18,6 +18,8 @@
     font-variant: normal;
     display: inline-block;
     text-transform: none;
+    font-size: 14px;
+    line-height: 1;
 
     //* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
