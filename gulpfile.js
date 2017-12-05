@@ -2,11 +2,11 @@ const fs = require('fs');
 const gulp = require('gulp');
 const iconfont = require('gulp-iconfont');
 const consolidate = require('gulp-consolidate');
-const {fontName, className, svgSrc} = JSON.parse(fs.readFileSync(__dirname + '/package.json', 'utf8')).CONFIG;
+const { fontName, className, svgSrc } = JSON.parse(fs.readFileSync(__dirname + '/package.json', 'utf8')).CONFIG;
 const timestamp = Math.round(Date.now() / 1000);
 const rename = require('gulp-rename');
 
-gulp.task('default', function () {
+gulp.task('default', function() {
     gulp.src(svgSrc)
         .pipe(iconfont({
             fontName, // required
@@ -17,7 +17,7 @@ gulp.task('default', function () {
             descent: 180,//The font descent. It is usefull to fix the font baseline yourself.
             normalize: true
         }))
-        .on('glyphs', function (glyphs) {
+        .on('glyphs', function(glyphs) {
             const options = {
                 className,
                 fontName,
@@ -31,7 +31,7 @@ gulp.task('default', function () {
                 .pipe(consolidate('lodash', options))
                 .pipe(rename({
                     basename: fontName,
-                    extname: ".css"
+                    extname: '.css'
                 }))
                 .pipe(gulp.dest('dist/'));
 
@@ -39,7 +39,7 @@ gulp.task('default', function () {
                 .pipe(consolidate('lodash', options))
                 .pipe(rename({
                     basename: 'iconfont',
-                    extname: ".less"
+                    extname: '.less'
                 }))
                 .pipe(gulp.dest('dist/'));
 
@@ -47,7 +47,7 @@ gulp.task('default', function () {
                 .pipe(consolidate('lodash', options))
                 .pipe(rename({
                     basename: 'iconfont-variables',
-                    extname: ".less"
+                    extname: '.less'
                 }))
                 .pipe(gulp.dest('dist/'));
 
@@ -55,7 +55,7 @@ gulp.task('default', function () {
                 .pipe(consolidate('lodash', options))
                 .pipe(rename({
                     basename: 'index',
-                    extname: ".html"
+                    extname: '.html'
                 }))
                 .pipe(gulp.dest('dist/'));
 
@@ -63,11 +63,19 @@ gulp.task('default', function () {
                 .pipe(consolidate('lodash', options))
                 .pipe(rename({
                     basename: 'icons',
-                    extname: ".json"
+                    extname: '.json'
                 }))
                 .pipe(gulp.dest('dist/'));
         })
         .pipe(gulp.dest('dist/fonts/'));
+});
+
+gulp.task('prepublish', () => {
+    gulp.src(svgSrc)
+        .pipe(rename(path => {
+            path.basename = path.basename.replace(/^.*-/, '');
+        }))
+        .pipe(gulp.dest('./icons'));
 });
 
 
