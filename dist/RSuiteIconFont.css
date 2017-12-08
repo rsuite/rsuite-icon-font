@@ -103,6 +103,7 @@
 .icon-bank:before { content: "\f19c" }
 .icon-institution:before { content: "\f19c" }
 .icon-university:before { content: "\f19c" }
+.icon-bar-chart-ranking:before { content: "\ea04" }
 .icon-bar-chart:before { content: "\f080" }
 .icon-bar-chart-o:before { content: "\f080" }
 .icon-barcode:before { content: "\f02a" }
@@ -584,6 +585,7 @@
 .icon-moon-o:before { content: "\f186" }
 .icon-motorcycle:before { content: "\f21c" }
 .icon-mouse-pointer:before { content: "\f245" }
+.icon-multiple-lines-chart:before { content: "\ea05" }
 .icon-music:before { content: "\f001" }
 .icon-neuter:before { content: "\f22c" }
 .icon-newspaper-o:before { content: "\f1ea" }
