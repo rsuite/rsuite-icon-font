@@ -51,6 +51,7 @@
 .icon-align-justify:before { content: "\f039" }
 .icon-align-left:before { content: "\f036" }
 .icon-align-right:before { content: "\f038" }
+.icon-alipay:before { content: "\ea06" }
 .icon-amazon:before { content: "\f270" }
 .icon-ambulance:before { content: "\f0f9" }
 .icon-american-sign-language-interpreting:before { content: "\f2a3" }
@@ -807,6 +808,7 @@
 .icon-times-rectangle:before { content: "\f2d3" }
 .icon-window-close:before { content: "\f2d3" }
 .icon-tint:before { content: "\f043" }
+.icon-tmall:before { content: "\ea07" }
 .icon-toggle-off:before { content: "\f204" }
 .icon-toggle-on:before { content: "\f205" }
 .icon-trademark:before { content: "\f25c" }
