@@ -31,8 +31,8 @@
     "fs-extra": "^2.1.2"
   },
   "CONFIG": {
-    "fontName": "RSuiteIconFont",
-    "className": "icon",
+    "fontName": "rsuite-icon-font",
+    "className": "rs-icon",
     "svgSrc": [
       "src/svg/**/*.svg"
     ]
