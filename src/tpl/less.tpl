@@ -1,6 +1,6 @@
 /* stylelint-disable */
 @font-face {
-  font-family: "<%= fontName %>";
+  font-family: @font-family-icon;
   src: url("@{icon-font-path}/<%= fontName %>.eot");
   src: url("@{icon-font-path}/<%= fontName %>.eot?#iefix") format("eot"),
   url("@{icon-font-path}/<%= fontName %>.ttf") format("truetype"),
@@ -12,7 +12,7 @@
 
 .<%= className %> {
   //* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "<%= fontName %>" !important;
+  font-family: @font-family-icon !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
