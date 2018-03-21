@@ -79,11 +79,15 @@
 .rs-icon-arrow-circle-o-up:before { content: "\f01b" }
 .rs-icon-arrow-circle-right:before { content: "\f0a9" }
 .rs-icon-arrow-circle-up:before { content: "\f0aa" }
-.rs-icon-arrow-down:before { content: "\f063" }
+.rs-icon-arrow-down:before { content: "\ea09" }
+.rs-icon-arrow-down-line:before { content: "\ea08" }
 .rs-icon-arrow-down2:before { content: "\e901" }
 .rs-icon-arrow-left:before { content: "\f060" }
+.rs-icon-arrow-left-line:before { content: "\ea0a" }
 .rs-icon-arrow-right:before { content: "\f061" }
+.rs-icon-arrow-right-line:before { content: "\ea0c" }
 .rs-icon-arrow-up:before { content: "\f062" }
+.rs-icon-arrow-up-line:before { content: "\ea0e" }
 .rs-icon-arrow-up2:before { content: "\e902" }
 .rs-icon-arrows:before { content: "\f047" }
 .rs-icon-arrows-alt:before { content: "\f0b2" }
@@ -92,6 +96,7 @@
 .rs-icon-assistive-listening-systems:before { content: "\f2a2" }
 .rs-icon-asterisk:before { content: "\f069" }
 .rs-icon-at:before { content: "\f1fa" }
+.rs-icon-attachment:before { content: "\ea10" }
 .rs-icon-attribution:before { content: "\e903" }
 .rs-icon-audio-description:before { content: "\f29e" }
 .rs-icon-automobile:before { content: "\f1b9" }
@@ -207,7 +212,7 @@
 .rs-icon-charts:before { content: "\e90a" }
 .rs-icon-charts-line:before { content: "\e909" }
 .rs-icon-check:before { content: "\f00c" }
-.rs-icon-check-circle:before { content: "\f058" }
+.rs-icon-check-circle:before { content: "\ea11" }
 .rs-icon-check-circle-o:before { content: "\f05d" }
 .rs-icon-check-square:before { content: "\f14a" }
 .rs-icon-check-square-o:before { content: "\f046" }
@@ -230,11 +235,11 @@
 .rs-icon-paste:before { content: "\f0ea" }
 .rs-icon-clock-o:before { content: "\f017" }
 .rs-icon-clone:before { content: "\f24d" }
+.rs-icon-close:before { content: "\ea13" }
 .rs-icon-close-circle:before { content: "\e90c" }
 .rs-icon-close:before { content: "\f00d" }
 .rs-icon-remove:before { content: "\f00d" }
 .rs-icon-times:before { content: "\f00d" }
-.rs-icon-close2:before { content: "\e90d" }
 .rs-icon-cloud:before { content: "\f0c2" }
 .rs-icon-cloud-download:before { content: "\f0ed" }
 .rs-icon-cloud-upload:before { content: "\f0ee" }
@@ -252,6 +257,8 @@
 .rs-icon-cogs:before { content: "\f085" }
 .rs-icon-gears:before { content: "\f085" }
 .rs-icon-coincide:before { content: "\e90e" }
+.rs-icon-collasped:before { content: "\ea15" }
+.rs-icon-collasped-o:before { content: "\ea14" }
 .rs-icon-columns:before { content: "\f0db" }
 .rs-icon-comment:before { content: "\f075" }
 .rs-icon-comment-o:before { content: "\f0e5" }
@@ -263,6 +270,7 @@
 .rs-icon-compress:before { content: "\f066" }
 .rs-icon-connectdevelop:before { content: "\f20e" }
 .rs-icon-contao:before { content: "\f26d" }
+.rs-icon-copy-o:before { content: "\ea16" }
 .rs-icon-copy:before { content: "\f0c5" }
 .rs-icon-files-o:before { content: "\f0c5" }
 .rs-icon-copyright:before { content: "\f1f9" }
@@ -334,6 +342,7 @@
 .rs-icon-warning:before { content: "\f071" }
 .rs-icon-exit:before { content: "\e915" }
 .rs-icon-expand:before { content: "\f065" }
+.rs-icon-expand-o:before { content: "\ea17" }
 .rs-icon-expeditedssl:before { content: "\f23e" }
 .rs-icon-external-link:before { content: "\f08e" }
 .rs-icon-external-link-square:before { content: "\f14c" }
@@ -462,6 +471,7 @@
 .rs-icon-heart:before { content: "\f004" }
 .rs-icon-heart-o:before { content: "\f08a" }
 .rs-icon-heartbeat:before { content: "\f21e" }
+.rs-icon-help-o:before { content: "\ea18" }
 .rs-icon-history:before { content: "\f1da" }
 .rs-icon-home:before { content: "\f015" }
 .rs-icon-hospital-o:before { content: "\f0f8" }
@@ -489,7 +499,8 @@
 .rs-icon-industry:before { content: "\f275" }
 .rs-icon-info:before { content: "\f129" }
 .rs-icon-info-circle:before { content: "\f05a" }
-.rs-icon-info2:before { content: "\e91d" }
+.rs-icon-info:before { content: "\ea19" }
+.rs-icon-question-circle-o:before { content: "\ea19" }
 .rs-icon-inr:before { content: "\f156" }
 .rs-icon-rupee:before { content: "\f156" }
 .rs-icon-instagram:before { content: "\f16d" }
@@ -600,6 +611,10 @@
 .rs-icon-opera:before { content: "\f26a" }
 .rs-icon-optin-monster:before { content: "\f23c" }
 .rs-icon-order-form:before { content: "\e929" }
+.rs-icon-page-end:before { content: "\ea1a" }
+.rs-icon-page-next:before { content: "\ea1b" }
+.rs-icon-page-previous:before { content: "\ea1c" }
+.rs-icon-page-top:before { content: "\ea1d" }
 .rs-icon-pagelines:before { content: "\f18c" }
 .rs-icon-paint-brush:before { content: "\f1fc" }
 .rs-icon-paper-plane-o:before { content: "\f1d9" }
@@ -647,7 +662,6 @@
 .rs-icon-qrcode:before { content: "\f029" }
 .rs-icon-question:before { content: "\f128" }
 .rs-icon-question-circle:before { content: "\f059" }
-.rs-icon-question-circle-o:before { content: "\f29c" }
 .rs-icon-question-circle2:before { content: "\e92e" }
 .rs-icon-question2:before { content: "\e92f" }
 .rs-icon-quora:before { content: "\f2c4" }
@@ -665,6 +679,8 @@
 .rs-icon-refresh:before { content: "\f021" }
 .rs-icon-refresh2:before { content: "\e930" }
 .rs-icon-registered:before { content: "\f25d" }
+.rs-icon-reload:before { content: "\ea1f" }
+.rs-icon-remind:before { content: "\ea20" }
 .rs-icon-renren:before { content: "\f18b" }
 .rs-icon-repeat:before { content: "\f01e" }
 .rs-icon-rotate-right:before { content: "\f01e" }
@@ -685,6 +701,9 @@
 .rs-icon-search-minus:before { content: "\f010" }
 .rs-icon-search-plus:before { content: "\f00e" }
 .rs-icon-sellsy:before { content: "\f213" }
+.rs-icon-sequence:before { content: "\ea24" }
+.rs-icon-sequence-down:before { content: "\ea22" }
+.rs-icon-sequence-up:before { content: "\ea23" }
 .rs-icon-server:before { content: "\f233" }
 .rs-icon-shapes:before { content: "\e933" }
 .rs-icon-share-alt:before { content: "\f1e0" }
@@ -866,6 +885,7 @@
 .rs-icon-volume-down:before { content: "\f027" }
 .rs-icon-volume-off:before { content: "\f026" }
 .rs-icon-volume-up:before { content: "\f028" }
+.rs-icon-warning:before { content: "\ea25" }
 .rs-icon-weapp:before { content: "\ea01" }
 .rs-icon-web:before { content: "\ea02" }
 .rs-icon-wechat:before { content: "\f1d7" }
