@@ -1,6 +1,6 @@
 /* stylelint-disable */
 @font-face {
-  font-family: "rsuite-icon-font";
+  font-family: @font-family-icon;
   src: url("@{icon-font-path}/rsuite-icon-font.eot");
   src: url("@{icon-font-path}/rsuite-icon-font.eot?#iefix") format("eot"),
   url("@{icon-font-path}/rsuite-icon-font.ttf") format("truetype"),
@@ -12,7 +12,7 @@
 
 .rs-icon {
   //* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "rsuite-icon-font" !important;
+  font-family: @font-family-icon !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -20,7 +20,7 @@
   display: inline-block;
   text-transform: none;
   font-size: 14px;
-  line-height: 1.4285714285714286; //~20px
+  line-height: 1;
   //* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -317,6 +317,13 @@
 }
 
 
+.rs-icon-arrow-down-line{
+  &::before {
+    content: @icon-arrow-down-line;
+  }
+}
+
+
 .rs-icon-arrow-down2{
   &::before {
     content: @icon-arrow-down2;
@@ -331,6 +338,13 @@
 }
 
 
+.rs-icon-arrow-left-line{
+  &::before {
+    content: @icon-arrow-left-line;
+  }
+}
+
+
 .rs-icon-arrow-right{
   &::before {
     content: @icon-arrow-right;
@@ -338,9 +352,23 @@
 }
 
 
+.rs-icon-arrow-right-line{
+  &::before {
+    content: @icon-arrow-right-line;
+  }
+}
+
+
 .rs-icon-arrow-up{
   &::before {
     content: @icon-arrow-up;
+  }
+}
+
+
+.rs-icon-arrow-up-line{
+  &::before {
+    content: @icon-arrow-up-line;
   }
 }
 
@@ -397,6 +425,13 @@
 .rs-icon-at{
   &::before {
     content: @icon-at;
+  }
+}
+
+
+.rs-icon-attachment{
+  &::before {
+    content: @icon-attachment;
   }
 }
 
@@ -1342,6 +1377,13 @@
 }
 
 
+.rs-icon-close{
+  &::before {
+    content: @icon-close;
+  }
+}
+
+
 .rs-icon-close-circle{
   &::before {
     content: @icon-close-circle;
@@ -1364,13 +1406,6 @@
 .rs-icon-times{
   &::before {
     content: @icon-times;
-  }
-}
-
-
-.rs-icon-close2{
-  &::before {
-    content: @icon-close2;
   }
 }
 
@@ -1489,6 +1524,20 @@
 }
 
 
+.rs-icon-collasped{
+  &::before {
+    content: @icon-collasped;
+  }
+}
+
+
+.rs-icon-collasped-o{
+  &::before {
+    content: @icon-collasped-o;
+  }
+}
+
+
 .rs-icon-columns{
   &::before {
     content: @icon-columns;
@@ -1562,6 +1611,13 @@
 .rs-icon-contao{
   &::before {
     content: @icon-contao;
+  }
+}
+
+
+.rs-icon-copy-o{
+  &::before {
+    content: @icon-copy-o;
   }
 }
 
@@ -2046,6 +2102,13 @@
 .rs-icon-expand{
   &::before {
     content: @icon-expand;
+  }
+}
+
+
+.rs-icon-expand-o{
+  &::before {
+    content: @icon-expand-o;
   }
 }
 
@@ -2927,6 +2990,13 @@
 }
 
 
+.rs-icon-help-o{
+  &::before {
+    content: @icon-help-o;
+  }
+}
+
+
 .rs-icon-history{
   &::before {
     content: @icon-history;
@@ -3109,9 +3179,15 @@
 }
 
 
-.rs-icon-info2{
+.rs-icon-info{
   &::before {
-    content: @icon-info2;
+    content: @icon-info;
+  }
+}
+
+.rs-icon-question-circle-o{
+  &::before {
+    content: @icon-question-circle-o;
   }
 }
 
@@ -3875,6 +3951,34 @@
 }
 
 
+.rs-icon-page-end{
+  &::before {
+    content: @icon-page-end;
+  }
+}
+
+
+.rs-icon-page-next{
+  &::before {
+    content: @icon-page-next;
+  }
+}
+
+
+.rs-icon-page-previous{
+  &::before {
+    content: @icon-page-previous;
+  }
+}
+
+
+.rs-icon-page-top{
+  &::before {
+    content: @icon-page-top;
+  }
+}
+
+
 .rs-icon-pagelines{
   &::before {
     content: @icon-pagelines;
@@ -4202,13 +4306,6 @@
 }
 
 
-.rs-icon-question-circle-o{
-  &::before {
-    content: @icon-question-circle-o;
-  }
-}
-
-
 .rs-icon-question-circle2{
   &::before {
     content: @icon-question-circle2;
@@ -4322,6 +4419,20 @@
 .rs-icon-registered{
   &::before {
     content: @icon-registered;
+  }
+}
+
+
+.rs-icon-reload{
+  &::before {
+    content: @icon-reload;
+  }
+}
+
+
+.rs-icon-remind{
+  &::before {
+    content: @icon-remind;
   }
 }
 
@@ -4458,6 +4569,27 @@
 .rs-icon-sellsy{
   &::before {
     content: @icon-sellsy;
+  }
+}
+
+
+.rs-icon-sequence{
+  &::before {
+    content: @icon-sequence;
+  }
+}
+
+
+.rs-icon-sequence-down{
+  &::before {
+    content: @icon-sequence-down;
+  }
+}
+
+
+.rs-icon-sequence-up{
+  &::before {
+    content: @icon-sequence-up;
   }
 }
 
@@ -5709,6 +5841,13 @@
 .rs-icon-volume-up{
   &::before {
     content: @icon-volume-up;
+  }
+}
+
+
+.rs-icon-warning{
+  &::before {
+    content: @icon-warning;
   }
 }
 
