@@ -471,6 +471,7 @@
 .rs-icon-heart-o:before { content: "\f08a" }
 .rs-icon-heartbeat:before { content: "\f21e" }
 .rs-icon-help-o:before { content: "\ea18" }
+.rs-icon-question-circle-o:before { content: "\ea18" }
 .rs-icon-history:before { content: "\f1da" }
 .rs-icon-home:before { content: "\f015" }
 .rs-icon-hospital-o:before { content: "\f0f8" }
@@ -496,10 +497,8 @@
 .rs-icon-inbox:before { content: "\f01c" }
 .rs-icon-indent:before { content: "\f03c" }
 .rs-icon-industry:before { content: "\f275" }
-.rs-icon-info:before { content: "\f129" }
-.rs-icon-info-circle:before { content: "\f05a" }
 .rs-icon-info:before { content: "\ea19" }
-.rs-icon-question-circle-o:before { content: "\ea19" }
+.rs-icon-info-circle:before { content: "\f05a" }
 .rs-icon-inr:before { content: "\f156" }
 .rs-icon-rupee:before { content: "\f156" }
 .rs-icon-instagram:before { content: "\f16d" }
@@ -594,6 +593,7 @@
 .rs-icon-modx:before { content: "\f285" }
 .rs-icon-money:before { content: "\f0d6" }
 .rs-icon-moon-o:before { content: "\f186" }
+.rs-icon-more:before { content: "\ea0b" }
 .rs-icon-motorcycle:before { content: "\f21c" }
 .rs-icon-mouse-pointer:before { content: "\f245" }
 .rs-icon-multiple-lines-chart:before { content: "\ea05" }
