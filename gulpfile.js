@@ -13,7 +13,8 @@ gulp.task('default', function() {
       prependUnicode: true, // recommended option
       formats: ['ttf', 'eot', 'woff', 'svg'],
       timestamp, // recommended to get consistent builds when watching files
-      fontHeight: 1001,
+      descent: 180,
+      fontHeight: 1000,
       normalize: true
     }))
     .on('glyphs', function(glyphs) {
