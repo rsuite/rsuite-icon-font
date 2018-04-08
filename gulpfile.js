@@ -13,7 +13,7 @@ gulp.task('default', function() {
       prependUnicode: true, // recommended option
       formats: ['ttf', 'eot', 'woff', 'svg'],
       timestamp, // recommended to get consistent builds when watching files
-      descent: 180,
+      descent: 143, // The same to font-awesome?v4.7.0
       fontHeight: 1000,
       normalize: true
     }))
