@@ -70,12 +70,12 @@ gulp.task('default', function() {
     .pipe(gulp.dest('dist/fonts/'));
 });
 
-gulp.task('prepublish', () => {
+gulp.task('prepublish', ['default'], () => {
   gulp.src(svgSrc)
     .pipe(rename(path => {
       path.basename = path.basename.replace(/^.*-/, '');
     }))
-    .pipe(gulp.dest('./icons'));
+    .pipe(gulp.dest('./svgs'));
 });
 
 
