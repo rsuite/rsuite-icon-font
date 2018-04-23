@@ -1,2 +1,2 @@
 # RSUITE Icon Svg
-rsuite 全部图标源文件
+RSUITE all icons source files.

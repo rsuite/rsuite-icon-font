@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/rsuite/rsuite-icon-font.git"
   },
-  "author": "",
-  "license": "MIT",
+  "author": "Godfery Yang <hiyangguo@qq.com> (https://hiyangguo.github.io/)",
+  "license": "(CC-BY-4.0 AND OFL-1.1 AND MIT)",
   "bugs": {
     "url": "https://github.com/rsuite/rsuite-icon-font/issues"
   },
