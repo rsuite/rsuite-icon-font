@@ -19,6 +19,7 @@
   "homepage": "https://github.com/rsuite/rsuite-icon-font#readme",
   "devDependencies": {
     "async": "^2.1.5",
+    "fs-extra": "^2.1.2",
     "glob": "^7.1.1",
     "gulp": "^3.9.1",
     "gulp-consolidate": "^0.2.0",
@@ -27,9 +28,6 @@
     "gulp-spawn": "^0.4.0",
     "lodash": "^4.17.4",
     "svgo": "^1.0.3"
-  },
-  "dependencies": {
-    "fs-extra": "^2.1.2"
   },
   "CONFIG": {
     "fontName": "rsuite-icon-font",

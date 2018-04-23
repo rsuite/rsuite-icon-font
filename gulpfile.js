@@ -3,7 +3,9 @@ const gulp = require('gulp');
 const iconfont = require('gulp-iconfont');
 const consolidate = require('gulp-consolidate');
 const { fontName, className, svgSrc } = JSON.parse(fs.readFileSync(__dirname + '/package.json', 'utf8')).CONFIG;
-const timestamp = Math.round(Date.now() / 1000);
+const { mtime } = fs.statSync('./package.json');
+// Use package.json edit time as timestamp;
+const timestamp = +mtime;
 const rename = require('gulp-rename');
 
 gulp.task('default', function() {
