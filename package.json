@@ -1,12 +1,15 @@
 {
   "name": "rsuite-icon-font",
   "version": "3.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "All rsuite icon resource file and icon fonts",
   "scripts": {
     "build": "rm -rf dist && gulp",
     "prepublish": "rm -rf icons && rm -rf fonts && gulp prepublish && cp -R dist/fonts ./fonts && svgo -f svgs"
   },
+  "keywords": [
+    "rsuite",
+    "icon-font"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rsuite/rsuite-icon-font.git"
