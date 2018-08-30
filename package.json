@@ -1,6 +1,6 @@
 {
   "name": "rsuite-icon-font",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "All rsuite icon resource file and icon fonts",
   "scripts": {
     "build": "rm -rf dist && gulp",
