@@ -1,11 +1,11 @@
 /* stylelint-disable */
 @font-face {
   font-family: @font-family-icon;
-  src: url("@{icon-font-path}/<%= fontName %>.eot");
-  src: url("@{icon-font-path}/<%= fontName %>.eot?#iefix") format("eot"),
-  url("@{icon-font-path}/<%= fontName %>.ttf") format("truetype"),
-  url("@{icon-font-path}/<%= fontName %>.woff") format("woff"),
-  url("@{icon-font-path}/<%= fontName %>.svg#<%= fontName %>") format("svg");
+  src: url('@{icon-font-path}/<%= fontName %>.eot');
+  src: url('@{icon-font-path}/<%= fontName %>.eot?#iefix') format('eot'),
+  url('@{icon-font-path}/<%= fontName %>.ttf') format('truetype'),
+  url('@{icon-font-path}/<%= fontName %>.woff') format('woff'),
+  url('@{icon-font-path}/<%= fontName %>.svg#<%= fontName %>') format('svg');
   font-weight: normal;
   font-style: normal;
 }

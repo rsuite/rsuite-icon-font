@@ -9,9 +9,9 @@
     font-style: normal;
 }
 
-[class^="<%= className %>"], [class*="<%= className %>"],.<%= className %>:before {
+[class^='<%= className %>'], [class*='<%= className %>'],.<%= className %>:before {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "<%= fontName %>" !important;
+    font-family: '<%= fontName %>' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;

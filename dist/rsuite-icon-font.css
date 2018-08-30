@@ -9,9 +9,9 @@
     font-style: normal;
 }
 
-[class^="rs-icon"], [class*="rs-icon"],.rs-icon:before {
+[class^='rs-icon'], [class*='rs-icon'],.rs-icon:before {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "rsuite-icon-font" !important;
+    font-family: 'rsuite-icon-font' !important;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -95,6 +95,7 @@
 .rs-icon-attribution:before { content: "\e903" }
 .rs-icon-audio-description:before { content: "\f29e" }
 .rs-icon-avatar:before { content: "\e904" }
+.rs-icon-back-arrow:before { content: "\ea12" }
 .rs-icon-backward:before { content: "\f04a" }
 .rs-icon-balance-scale:before { content: "\f24e" }
 .rs-icon-ban:before { content: "\f05e" }
@@ -173,6 +174,8 @@
 .rs-icon-cc-stripe:before { content: "\f1f5" }
 .rs-icon-cc-visa:before { content: "\f1f0" }
 .rs-icon-certificate:before { content: "\f0a3" }
+.rs-icon-character-area:before { content: "\ea13" }
+.rs-icon-character-authorize:before { content: "\ea1e" }
 .rs-icon-charts:before { content: "\e90a" }
 .rs-icon-charts-line:before { content: "\e909" }
 .rs-icon-check:before { content: "\f00c" }
@@ -227,6 +230,7 @@
 .rs-icon-copy:before { content: "\f0c5" }
 .rs-icon-copy-o:before { content: "\ea16" }
 .rs-icon-copyright:before { content: "\f1f9" }
+.rs-icon-creative:before { content: "\ea26" }
 .rs-icon-creative-commons:before { content: "\f25e" }
 .rs-icon-credit-card:before { content: "\f09d" }
 .rs-icon-credit-card-alt:before { content: "\f283" }
@@ -239,6 +243,7 @@
 .rs-icon-cutlery:before { content: "\f0f5" }
 .rs-icon-dashboard:before { content: "\f0e4" }
 .rs-icon-dashcube:before { content: "\f210" }
+.rs-icon-data-authorize:before { content: "\ea28" }
 .rs-icon-data-decrease:before { content: "\e90f" }
 .rs-icon-data-increase:before { content: "\e910" }
 .rs-icon-database:before { content: "\f1c0" }
@@ -246,6 +251,7 @@
 .rs-icon-dedent:before { content: "\f03b" }
 .rs-icon-delicious:before { content: "\f1a5" }
 .rs-icon-desktop:before { content: "\f108" }
+.rs-icon-detail:before { content: "\ea29" }
 .rs-icon-deviantart:before { content: "\f1bd" }
 .rs-icon-diamond:before { content: "\f219" }
 .rs-icon-digg:before { content: "\f1a6" }
@@ -281,6 +287,8 @@
 .rs-icon-expand:before { content: "\f065" }
 .rs-icon-expand-o:before { content: "\ea17" }
 .rs-icon-expeditedssl:before { content: "\f23e" }
+.rs-icon-explore:before { content: "\ea2b" }
+.rs-icon-export:before { content: "\ea2c" }
 .rs-icon-external-link:before { content: "\f08e" }
 .rs-icon-external-link-square:before { content: "\f14c" }
 .rs-icon-eye:before { content: "\f06e" }
@@ -298,6 +306,7 @@
 .rs-icon-file:before { content: "\f15b" }
 .rs-icon-file-audio-o:before { content: "\f1c7" }
 .rs-icon-file-code-o:before { content: "\f1c9" }
+.rs-icon-file-download:before { content: "\ea2d" }
 .rs-icon-file-excel-o:before { content: "\f1c3" }
 .rs-icon-file-image-o:before { content: "\f1c5" }
 .rs-icon-file-movie-o:before { content: "\f1c8" }
@@ -306,6 +315,7 @@
 .rs-icon-file-powerpoint-o:before { content: "\f1c4" }
 .rs-icon-file-text:before { content: "\f15c" }
 .rs-icon-file-text-o:before { content: "\f0f6" }
+.rs-icon-file-upload:before { content: "\ea2e" }
 .rs-icon-file-word-o:before { content: "\f1c2" }
 .rs-icon-file-zip-o:before { content: "\f1c6" }
 .rs-icon-film:before { content: "\f008" }
@@ -338,6 +348,7 @@
 .rs-icon-gavel:before { content: "\f0e3" }
 .rs-icon-gbp:before { content: "\f154" }
 .rs-icon-ge:before { content: "\f1d1" }
+.rs-icon-gear:before { content: "\ea2f" }
 .rs-icon-gear-circle:before { content: "\e918" }
 .rs-icon-gear2:before { content: "\e919" }
 .rs-icon-gears2:before { content: "\e91a" }
@@ -401,9 +412,12 @@
 .rs-icon-id-badge:before { content: "\f2c1" }
 .rs-icon-id-card:before { content: "\f2c2" }
 .rs-icon-id-card-o:before { content: "\f2c3" }
+.rs-icon-id-info:before { content: "\ea0d" }
+.rs-icon-id-mapping:before { content: "\ea30" }
 .rs-icon-ils:before { content: "\f20b" }
 .rs-icon-image:before { content: "\f03e" }
 .rs-icon-imdb:before { content: "\f2d8" }
+.rs-icon-import:before { content: "\ea31" }
 .rs-icon-inbox:before { content: "\f01c" }
 .rs-icon-indent:before { content: "\f03c" }
 .rs-icon-industry:before { content: "\f275" }
@@ -501,6 +515,7 @@
 .rs-icon-object-ungroup:before { content: "\f248" }
 .rs-icon-odnoklassniki:before { content: "\f263" }
 .rs-icon-odnoklassniki-square:before { content: "\f264" }
+.rs-icon-off:before { content: "\ea34" }
 .rs-icon-ok-circle:before { content: "\e928" }
 .rs-icon-opencart:before { content: "\f23d" }
 .rs-icon-openid:before { content: "\f19b" }
@@ -525,6 +540,8 @@
 .rs-icon-pencil:before { content: "\f040" }
 .rs-icon-pencil-square:before { content: "\f14b" }
 .rs-icon-people-group:before { content: "\e92b" }
+.rs-icon-peoples:before { content: "\ea36" }
+.rs-icon-peoples-map:before { content: "\ea35" }
 .rs-icon-percent:before { content: "\f295" }
 .rs-icon-phone:before { content: "\f095" }
 .rs-icon-phone-square:before { content: "\f098" }
@@ -550,6 +567,8 @@
 .rs-icon-print:before { content: "\f02f" }
 .rs-icon-product-hunt:before { content: "\f288" }
 .rs-icon-profile:before { content: "\e92d" }
+.rs-icon-project:before { content: "\ea39" }
+.rs-icon-public-opinion:before { content: "\ea3a" }
 .rs-icon-puzzle-piece:before { content: "\f12e" }
 .rs-icon-qq:before { content: "\f1d6" }
 .rs-icon-qrcode:before { content: "\f029" }
@@ -562,7 +581,9 @@
 .rs-icon-quote-right:before { content: "\f10e" }
 .rs-icon-ra:before { content: "\f1d0" }
 .rs-icon-random:before { content: "\f074" }
+.rs-icon-rate:before { content: "\ea3b" }
 .rs-icon-ravelry:before { content: "\f2d9" }
+.rs-icon-realtime:before { content: "\ea3c" }
 .rs-icon-recycle:before { content: "\f1b8" }
 .rs-icon-reddit:before { content: "\f1a1" }
 .rs-icon-reddit-alien:before { content: "\f281" }
@@ -570,6 +591,7 @@
 .rs-icon-refresh:before { content: "\f021" }
 .rs-icon-refresh2:before { content: "\e930" }
 .rs-icon-registered:before { content: "\f25d" }
+.rs-icon-related-map:before { content: "\ea3d" }
 .rs-icon-reload:before { content: "\ea1f" }
 .rs-icon-remind:before { content: "\ea20" }
 .rs-icon-renren:before { content: "\f18b" }
@@ -586,10 +608,13 @@
 .rs-icon-rub:before { content: "\f158" }
 .rs-icon-s15:before { content: "\f2cd" }
 .rs-icon-safari:before { content: "\f267" }
+.rs-icon-sales:before { content: "\ea37" }
+.rs-icon-growth:before { content: "\ea37" }
 .rs-icon-save:before { content: "\f0c7" }
 .rs-icon-scribd:before { content: "\f28a" }
 .rs-icon-search:before { content: "\f002" }
 .rs-icon-search-minus:before { content: "\f010" }
+.rs-icon-search-peoples:before { content: "\ea3f" }
 .rs-icon-search-plus:before { content: "\f00e" }
 .rs-icon-sellsy:before { content: "\f213" }
 .rs-icon-send:before { content: "\f1d8" }
@@ -598,6 +623,7 @@
 .rs-icon-sequence-down:before { content: "\ea22" }
 .rs-icon-sequence-up:before { content: "\ea23" }
 .rs-icon-server:before { content: "\f233" }
+.rs-icon-setting:before { content: "\ea0f" }
 .rs-icon-shapes:before { content: "\e933" }
 .rs-icon-share:before { content: "\f064" }
 .rs-icon-share-alt:before { content: "\f1e0" }
@@ -639,6 +665,7 @@
 .rs-icon-sort-up:before { content: "\f0de" }
 .rs-icon-soundcloud:before { content: "\f1be" }
 .rs-icon-space-shuttle:before { content: "\f197" }
+.rs-icon-speaker:before { content: "\ea41" }
 .rs-icon-spinner:before { content: "\f110" }
 .rs-icon-spoon:before { content: "\f1b1" }
 .rs-icon-spotify:before { content: "\f1bc" }
@@ -676,8 +703,12 @@
 .rs-icon-table:before { content: "\f0ce" }
 .rs-icon-tablet:before { content: "\f10a" }
 .rs-icon-tag:before { content: "\f02b" }
+.rs-icon-tag-area:before { content: "\ea42" }
+.rs-icon-tag-authorize:before { content: "\ea43" }
+.rs-icon-tag-unauthorize:before { content: "\ea44" }
 .rs-icon-tags:before { content: "\f02c" }
 .rs-icon-target:before { content: "\ea03" }
+.rs-icon-task:before { content: "\ea46" }
 .rs-icon-tasks:before { content: "\f0ae" }
 .rs-icon-telegram:before { content: "\f2c6" }
 .rs-icon-tencent-weibo:before { content: "\f1d5" }
@@ -721,6 +752,7 @@
 .rs-icon-tree-close:before { content: "\e93a" }
 .rs-icon-tree-open:before { content: "\e93b" }
 .rs-icon-trello:before { content: "\f181" }
+.rs-icon-trend:before { content: "\ea47" }
 .rs-icon-tripadvisor:before { content: "\f262" }
 .rs-icon-trophy:before { content: "\f091" }
 .rs-icon-truck:before { content: "\f0d1" }
@@ -749,6 +781,7 @@
 .rs-icon-user-analysis:before { content: "\e93f" }
 .rs-icon-user-circle:before { content: "\f2bd" }
 .rs-icon-user-circle-o:before { content: "\f2be" }
+.rs-icon-user-info:before { content: "\ea48" }
 .rs-icon-user-md:before { content: "\f0f0" }
 .rs-icon-user-o:before { content: "\f2c0" }
 .rs-icon-user-plus:before { content: "\f234" }
@@ -763,6 +796,8 @@
 .rs-icon-viadeo:before { content: "\f2a9" }
 .rs-icon-viadeo-square:before { content: "\f2aa" }
 .rs-icon-video-camera:before { content: "\f03d" }
+.rs-icon-views-authorize:before { content: "\ea49" }
+.rs-icon-views-unauthorize:before { content: "\ea4a" }
 .rs-icon-vimeo:before { content: "\f27d" }
 .rs-icon-vimeo-square:before { content: "\f194" }
 .rs-icon-vine:before { content: "\f1ca" }
