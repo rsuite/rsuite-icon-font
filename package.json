@@ -35,6 +35,7 @@
   "CONFIG": {
     "fontName": "rsuite-icon-font",
     "className": "rs-icon",
+    "lessClassNamePrev":"@{ns}icon",
     "svgSrc": [
       "src/svg/**/*.svg"
     ]

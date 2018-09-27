@@ -10,7 +10,7 @@
   font-style: normal;
 }
 
-.<%= className %> {
+.<%= lessClassNamePrev %> {
   //* use !important to prevent issues with browser extensions that change fonts */
   font-family: @font-family-icon !important;
   speak: none;
@@ -26,7 +26,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-<% _.each(glyphs, function(glyph) {%><%_.each(glyph.name.split(','),function(name){%>.<%= className %>-<%= name %>{
+<% _.each(glyphs, function(glyph) {%><%_.each(glyph.name.split(','),function(name){%>.<%= lessClassNamePrev %>-<%= name %>{
   &::before {
     content: @icon-<%= name %>;
   }

@@ -2,7 +2,7 @@ const fs = require('fs');
 const gulp = require('gulp');
 const iconfont = require('gulp-iconfont');
 const consolidate = require('gulp-consolidate');
-const { fontName, className, svgSrc } = JSON.parse(fs.readFileSync(__dirname + '/package.json', 'utf8')).CONFIG;
+const { fontName, className, svgSrc,lessClassNamePrev } = JSON.parse(fs.readFileSync(__dirname + '/package.json', 'utf8')).CONFIG;
 const { mtime } = fs.statSync('./package.json');
 // Use package.json edit time as timestamp;
 const timestamp = +mtime;
@@ -22,6 +22,7 @@ gulp.task('default', function() {
     .on('glyphs', function(glyphs) {
       const options = {
         className,
+        lessClassNamePrev,
         fontName,
         fontPath: 'fonts/', // set path to font (from your CSS file if relative)
         glyphs: glyphs.sort((a, b) => {
