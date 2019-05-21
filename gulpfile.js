@@ -54,7 +54,7 @@ gulp.task('default', function() {
         }))
         .pipe(gulp.dest('dist/'));
 
-      gulp.src(`src/tpl/html.tpl`)
+      gulp.src('src/tpl/html.tpl')
         .pipe(consolidate('lodash', options))
         .pipe(rename({
           basename: 'index',
@@ -62,11 +62,19 @@ gulp.task('default', function() {
         }))
         .pipe(gulp.dest('dist/'));
 
-      gulp.src(`src/tpl/json.tpl`)
+      gulp.src('src/tpl/json.tpl')
         .pipe(consolidate('lodash', options))
         .pipe(rename({
           basename: 'icons',
           extname: '.json'
+        }))
+        .pipe(gulp.dest('dist/'));
+
+      gulp.src('src/tpl/d.ts.tpl')
+        .pipe(consolidate('lodash', options))
+        .pipe(rename({
+          basename: 'icons.d',
+          extname: '.ts'
         }))
         .pipe(gulp.dest('dist/'));
     })
