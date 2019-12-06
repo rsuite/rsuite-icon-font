@@ -38,7 +38,7 @@ gulp.task('default', function() {
         }))
         .pipe(gulp.dest('dist/'));
 
-      gulp.src('src/tpl/less.tpl')
+      gulp.src('src/tpl/iconfont-less.tpl')
         .pipe(consolidate('lodash', options))
         .pipe(rename({
           basename: 'iconfont',
@@ -46,7 +46,7 @@ gulp.task('default', function() {
         }))
         .pipe(gulp.dest('dist/'));
 
-      gulp.src('src/tpl/variables.tpl')
+      gulp.src('src/tpl/iconfont-variables-less.tpl')
         .pipe(consolidate('lodash', options))
         .pipe(rename({
           basename: 'iconfont-variables',
