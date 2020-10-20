@@ -1,6 +1,6 @@
 {
   "name": "rsuite-icon-font",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "All rsuite icon resource file and icon fonts",
   "scripts": {
     "build": "rm -rf dist && gulp",
@@ -35,7 +35,7 @@
   "CONFIG": {
     "fontName": "rsuite-icon-font",
     "className": "rs-icon",
-    "lessClassNamePrev":"@{ns}icon",
+    "lessClassNamePrev": "@{ns}icon",
     "svgSrc": [
       "src/svg/**/*.svg"
     ]
