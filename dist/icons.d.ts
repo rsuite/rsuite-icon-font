@@ -1,5 +1,4 @@
 type IconNames = 
-  |  '500px'
   |  'address-book'
   |  'address-book-o'
   |  'adjust'
@@ -285,6 +284,7 @@ type IconNames =
   |  'fire-extinguisher'
   |  'firefox'
   |  'first-order'
+  |  'five-hundred-px'
   |  'flag'
   |  'flag-checkered'
   |  'flag-o'
@@ -570,7 +570,6 @@ type IconNames =
   |  's15'
   |  'safari'
   |  'sales'
-  |  'growth'
   |  'save'
   |  'scribd'
   |  'search'

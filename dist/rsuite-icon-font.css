@@ -38,7 +38,6 @@
     text-align: center;
 }
 
-.rs-icon-500px:before { content: "\f26e" }
 .rs-icon-address-book:before { content: "\f2b9" }
 .rs-icon-address-book-o:before { content: "\f2ba" }
 .rs-icon-adjust:before { content: "\f042" }
@@ -324,6 +323,7 @@
 .rs-icon-fire-extinguisher:before { content: "\f134" }
 .rs-icon-firefox:before { content: "\f269" }
 .rs-icon-first-order:before { content: "\f2b0" }
+.rs-icon-five-hundred-px:before { content: "\f26e" }
 .rs-icon-flag:before { content: "\f024" }
 .rs-icon-flag-checkered:before { content: "\f11e" }
 .rs-icon-flag-o:before { content: "\f11d" }
@@ -609,7 +609,6 @@
 .rs-icon-s15:before { content: "\f2cd" }
 .rs-icon-safari:before { content: "\f267" }
 .rs-icon-sales:before { content: "\ea37" }
-.rs-icon-growth:before { content: "\ea37" }
 .rs-icon-save:before { content: "\f0c7" }
 .rs-icon-scribd:before { content: "\f28a" }
 .rs-icon-search:before { content: "\f002" }

@@ -1,0 +1,4 @@
+# @see https://gist.github.com/pladaria/69321af86ce165c2c1fc1c718b098dd0
+plugins:
+  # keep view box
+  - removeViewBox: false
