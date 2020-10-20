@@ -1,6 +1,6 @@
 {
   "name": "rsuite-icon-font",
-  "version": "3.0.4",
+  "version": "4.0.0-0",
   "description": "All rsuite icon resource file and icon fonts",
   "scripts": {
     "build": "npm run build:fonts && npm run build:components",
