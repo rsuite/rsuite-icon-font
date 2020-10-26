@@ -5,8 +5,9 @@
   "scripts": {
     "build": "npm run build:fonts && npm run build:components",
     "build:fonts": "rm -rf dist && gulp",
-    "build:components": "rm -rf dist/components && node generateReactComponent.js",
-    "prepublishOnly": "rm -rf icons && rm -rf fonts && rm -rf components && gulp prepublish && cp -R dist/fonts ./fonts && svgo -f svgs && npm run  build:components && cp -R dist/components ./components"
+    "build:components": "rm -rf dist/components && node generateReactComponent.js && npm run build:compolile-components",
+    "build:compolile-components": "rm -rf components && babel dist/components --extensions .tsx --out-dir components",
+    "prepublishOnly": "rm -rf icons && rm -rf fonts && rm -rf components && gulp prepublish && cp -R dist/fonts ./fonts && svgo -f svgs && npm run  build:components"
   },
   "keywords": [
     "rsuite",
@@ -23,6 +24,10 @@
   },
   "homepage": "https://github.com/rsuite/rsuite-icon-font#readme",
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
     "@svgr/core": "^5.4.0",
     "@svgr/plugin-jsx": "^5.4.0",
     "@svgr/plugin-prettier": "^5.4.0",
