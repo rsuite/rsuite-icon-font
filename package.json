@@ -5,9 +5,9 @@
   "scripts": {
     "build": "npm run build:fonts && npm run build:components",
     "build:fonts": "rm -rf dist && gulp",
-    "build:components": "rm -rf dist/components && node generateReactComponent.js && npm run build:compolile-components",
-    "build:compolile-components": "rm -rf components && babel dist/components --extensions .tsx --out-dir components",
-    "prepublishOnly": "rm -rf icons && rm -rf fonts && rm -rf components && gulp prepublish && cp -R dist/fonts ./fonts && svgo -f svgs && npm run  build:components"
+    "build:components": "rm -rf components && cp -R dist/components ./components && npm run build:compolile-components",
+    "build:compolile-components": "rm -rf lib && babel dist/components --extensions .tsx --out-dir lib",
+    "prepublishOnly": "rm -rf icons && rm -rf fonts && rm -rf components && gulp prepublish && cp -R dist/fonts ./fonts && svgo -f svgs && npm run build:components"
   },
   "keywords": [
     "rsuite",
@@ -55,6 +55,7 @@
   "files": [
     "fonts",
     "svgs",
-    "components"
+    "components",
+    "lib"
   ]
 }

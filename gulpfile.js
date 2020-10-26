@@ -9,6 +9,7 @@ const { mtime } = fs.statSync('./package.json');
 // Use package.json edit time as timestamp;
 const timestamp = +mtime;
 const rename = require('gulp-rename');
+const generateComponents = require('./generateReactComponent');
 
 /**
  * This is needed for mapping glyphs and codepoints.
@@ -127,5 +128,11 @@ function renameTask() {
     .pipe(gulp.dest('./svgs'));
 }
 
+function buildToLib(cb) {
+  generateComponents();
+  cb();
+}
+
+exports.buildToLib = gulp.series(buildToLib);
 exports.default = gulp.series(defaultTask);
-exports.prepublish = gulp.series(defaultTask, renameTask);
+exports.prepublish = gulp.series(defaultTask, renameTask, buildToLib);
