@@ -49,12 +49,11 @@
     "className": "rs-icon",
     "lessClassNamePrev": "@{ns}icon",
     "svgSrc": [
-      "src/svg/**/*.svg"
+      "src/svg/legacy/*.svg"
     ]
   },
   "files": [
     "fonts",
-    "svgs",
     "components",
     "lib"
   ]
