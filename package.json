@@ -7,7 +7,7 @@
     "build:fonts": "rm -rf dist && gulp",
     "build:components": "rm -rf components && cp -R dist/components ./components && npm run build:compolile-components",
     "build:compolile-components": "rm -rf lib && babel dist/components --extensions .tsx --out-dir lib",
-    "prepublishOnly": "rm -rf icons && rm -rf fonts && rm -rf components && gulp prepublish && cp -R dist/fonts ./fonts && svgo -f svgs && npm run build:components"
+    "prepublishOnly": "rm -rf icons && rm -rf fonts && rm -rf components && rm -rf dist && gulp prepublish && cp -R dist/fonts ./fonts && svgo -f svgs && npm run build:components"
   },
   "keywords": [
     "rsuite",

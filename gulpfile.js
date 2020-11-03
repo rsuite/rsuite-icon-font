@@ -135,4 +135,4 @@ function buildToLib(cb) {
 
 exports.buildToLib = gulp.series(buildToLib);
 exports.default = gulp.series(defaultTask, buildToLib);
-exports.prepublish = gulp.series(defaultTask, renameTask);
+exports.prepublish = gulp.series(defaultTask, buildToLib, renameTask);
