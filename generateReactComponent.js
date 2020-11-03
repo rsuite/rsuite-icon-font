@@ -7,6 +7,33 @@ const camelCase = require('camelcase');
 const SOURCE_DIR = './src/svg';
 const DIST_DIR = './dist/components';
 
+function consoleInfo() {
+  let total = 0,
+    legacy = 0;
+  const files = glob.sync(`${SOURCE_DIR}/*`);
+  const filesInfo = files.map((svgPath) => {
+    const totalNums = glob.sync(`${svgPath}/*.svg`).length;
+    const category = path.relative(SOURCE_DIR, svgPath);
+    if (category === 'legacy') {
+      legacy = totalNums;
+    }
+    total += totalNums;
+    return {
+      path: svgPath,
+      category: camelCase(category, {
+        pascalCase: true,
+      }),
+      total: glob.sync(`${svgPath}/*`).length,
+    };
+  });
+  console.log('------ Detail info: ------');
+  console.log(`Total:${total}, current:${total - legacy}, legacy:${legacy}`);
+  filesInfo.forEach(({ category, total }) => {
+    console.log(`${category}: ${total}`);
+  });
+  console.log('-------------------------');
+}
+
 module.exports = function generateComponents() {
   fs.mkdirpSync(DIST_DIR);
 
@@ -45,4 +72,5 @@ module.exports = function generateComponents() {
 ${jsCode}`
     );
   });
+  consoleInfo();
 };
