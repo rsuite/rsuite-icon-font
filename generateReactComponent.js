@@ -51,16 +51,17 @@ module.exports = function generateComponents() {
         pascalCase: true,
       }
     );
-    const svg = fs.readFileSync(svgPath, 'utf8');
+    const svgCode = fs.readFileSync(svgPath, 'utf8');
     console.log(`(${index + 1}/${files.length}) Generating ${componentName}.tsx ...`);
     const jsCode = svgr.sync(
-      svg,
+      svgCode,
       {
         plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier'],
         typescript: true,
         prettier: true,
         svgo: true,
-        expandProps: 'start',
+        ref: true,
+        expandProps: 'end',
         svgProps: {
           width: '1em',
           height: '1em',
