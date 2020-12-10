@@ -1,6 +1,6 @@
 {
   "name": "@rsuite/icon-font",
-  "version": "4.0.0-alpha.1",
+  "version": "4.0.0-alpha.2",
   "description": "All rsuite icon resource file and icon fonts",
   "scripts": {
     "build": "npm run build:fonts && npm run build:components",
@@ -26,6 +26,7 @@
   "devDependencies": {
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.10",
     "@babel/preset-react": "^7.12.1",
     "@babel/preset-typescript": "^7.12.1",
     "@svgr/core": "^5.4.0",
