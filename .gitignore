@@ -29,3 +29,4 @@ typings/
 /components
 /lib
 /dist
+.DS_Store
